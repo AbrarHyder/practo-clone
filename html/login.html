@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/css/login.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png">
+        <title>Login</title>
+</head>
+<body>
+        <div class="login-menu">
+                <input id="loginpg" class="loginpage" type="button" value="Login" onclick=""/>
+                <input id="signpg" class="signuppage" type="button" value="Register" onclick=""/>
+        </div>
+        <div class="login-ul"></div>
+
+        <div class="login-maindiv">
+                <div class="login-mainl">
+                        <img src="https://accounts.practo.com/static/images/illustration.png" alt="">
+                </div>
+                <div class="login-mainr">
+                        <div class="login-form">
+                                <p>Mobile Number / Email ID</p>
+                                <input id="login-mobNo" type="input" placeholder="Mobile Number / Email ID"/>
+                                <p>Password</p>
+                                <input id="login-Pass" type="input" placeholder="Password"/>
+                                <div>
+                                <input type="checkbox" id="rem-30" name="Remember" value="Remember">
+                                <label for="Remember">Remember me for 30 days</label>
+                                </div>
+                                <div>
+                                <input type="checkbox" id="OTP-login" name="OTP-login" value="OTP-login">
+                                <label for="OTP-login">Login with OTP instead of password</label>
+                                </div>
+                                <input class="login-but" id="login-but" type="button" value="Login"/>
+                        </div>
+                </div>
+        </div>
+</body>
+</html>
