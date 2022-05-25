@@ -1,3 +1,4 @@
+
 .home-search{
         width:100%;
         display:flexbox;
@@ -56,7 +57,7 @@
         width: 50%;
         float: left; 
         padding-left: 5%;
-        font-family: Arial, sans-serif;
+        font-family: Camphor, sans-serif;
         padding-top: .5rem;
      
 }
@@ -84,7 +85,7 @@
         border-radius: .5vw;
         background-color: #fcfcfc;
         color: rgb(0, 0, 0);
-        font-family:Arial, sans-serif;
+        font-family:Camphor, sans-serif;
         font-size: 1.2vw;
         font-weight: 600;
         border: none;
@@ -154,7 +155,7 @@
 }
 .main2a12{
         height: auto;
-        font-family:Arial, sans-serif; 
+        font-family:Camphor, sans-serif; 
         margin-top: -4rem;
         padding-top: 1rem;
         padding-bottom:0;
@@ -218,7 +219,7 @@
         }
         .main2a12{
                 height: auto;
-                font-family:Arial, sans-serif; 
+                font-family:Camphor, sans-serif; 
                 text-align: center;
 
                 margin-top: -3rem;
@@ -246,7 +247,7 @@
          width:90%;
          margin-left: auto;
          margin-right: auto;
-         font-family: Arial, sans-serif;
+         font-family: Camphor, sans-serif;
          display: flexbox;
          margin-top:0;
 
@@ -272,7 +273,7 @@
          height: 3rem;
          margin-top: 2.5rem;
          width:10rem;
-         font-family: Arial, sans-serif;
+         font-family: Camphor, sans-serif;
          cursor: pointer;
          background-color: white;
          color: #14bef0;
@@ -293,7 +294,7 @@
                 width:90%;
                 margin-left: auto;
                 margin-right: auto;
-                font-family: Arial, sans-serif;
+                font-family: Camphor, sans-serif;
                 display: flex;
                 flex-direction: column;
         }
@@ -327,7 +328,7 @@
                 height: 6vw;
                 margin-top: 1vw;
                 width:20vw;
-                font-family: Arial, sans-serif;
+                font-family: Camphor, sans-serif;
                 cursor: pointer;
                 background-color: white;
                 color: #14bef0;
@@ -355,7 +356,7 @@
         align-items: center;
         justify-content: center; 
         text-align: center;
-        font-family:Arial,sans-serif; 
+        font-family:Camphor,sans-serif; 
         padding:0;
         margin: 5%;
        
@@ -367,7 +368,7 @@
          cursor: pointer;
  }
  .home-maindiv3>div>p{
-        font-family:Arial,sans-serif; 
+        font-family:Camphor,sans-serif; 
         font-weight: 600;
         font-size: .8rem;
         cursor: pointer;
@@ -375,7 +376,7 @@
  .home-maindiv3>div>input{
          background-color: white;
          border: none;
-         font-family: Arial,sans-serif;
+         font-family: Camphor,sans-serif;
          padding:.1rem;
          font-size: 1rem;
          font-weight: 700;
@@ -401,7 +402,7 @@
                 align-items: center;
                 justify-content: center; 
                 text-align: center;
-                font-family:Arial,sans-serif; 
+                font-family:Camphor,sans-serif; 
                 padding:0;
                 margin: 5%;
                
@@ -414,7 +415,7 @@
                  cursor: pointer;
          }
          .home-maindiv3>div>p{
-                font-family:Arial,sans-serif; 
+                font-family:Camphor,sans-serif; 
                 font-weight: 600;
                 font-size: 2vw;
                 cursor: pointer;
@@ -422,7 +423,7 @@
          .home-maindiv3>div>input{
                 background-color: white;
                 border: none;
-                font-family: Arial,sans-serif;
+                font-family: Camphor,sans-serif;
                 padding:.1rem;
                 font-size: 2vw;
                 font-weight: 700;
@@ -433,7 +434,7 @@
       }
 
  .slideshow-heading{
-         font-family: Arial, sans-serif;
+         font-family: Camphor, sans-serif;
          font-size: 2vw;
          text-align: center;
  }
@@ -501,7 +502,7 @@ img {vertical-align: middle;}
    width:50%;
    margin-left: auto;
    margin-right: auto;
-   font-family: Arial,sans-serif;
+   font-family: Camphor,sans-serif;
    font-size: 1.7vw;
    font-weight: 300;
    margin-bottom: 0;
@@ -578,7 +579,7 @@ img {vertical-align: middle;}
        float:left;
        flex-direction: column;
        width: 33%;
-       font-family:Arial,sans-serif; 
+       font-family:Camphor,sans-serif; 
 }
 
 .main5left>h2{
@@ -609,7 +610,7 @@ img {vertical-align: middle;}
         display:flex;
         float:right;
         width: 66%;
-        font-family:Arial,sans-serif; 
+        font-family:Camphor,sans-serif; 
  }
  .main5right>div{
          display: flex;
@@ -649,7 +650,7 @@ img {vertical-align: middle;}
                 /* float:left; */
                 flex-direction: column;
                 width: 100%;
-                font-family:Arial,sans-serif; 
+                font-family:Camphor,sans-serif; 
          }  
          .main5left>h2{
                 margin-bottom: 0;
@@ -683,7 +684,7 @@ img {vertical-align: middle;}
         .main5right{
                 display:block;
                 width: 90%;
-                font-family:Arial,sans-serif; 
+                font-family:Camphor,sans-serif; 
          }
          .main5right>div{
                  display: flex;
@@ -761,7 +762,7 @@ img {vertical-align: middle;}
       } 
       .slider>div>h4{
          color: rgb(60, 60, 60);
-         font-family: Arial,sans-serif;
+         font-family: Camphor,sans-serif;
          font-size: 1.3vw;
          padding-top: 0;
          font-weight: 600;
@@ -770,7 +771,7 @@ img {vertical-align: middle;}
       } 
       .slider>div>p{
         color: rgb(82, 82, 82);
-        font-family: Arial,sans-serif;
+        font-family: Camphor,sans-serif;
         font-size: 1vw;
         padding-top: 0;
         font-weight: 500;
@@ -843,7 +844,7 @@ img {vertical-align: middle;}
               } 
               .slider>div>h4{
                  color: rgb(50, 50, 50);
-                 font-family: Arial,sans-serif;
+                 font-family: Camphor,sans-serif;
                  font-size: 2vw;
                  padding-top: 0;
                  font-weight: 600;
@@ -851,7 +852,7 @@ img {vertical-align: middle;}
               } 
               .slider>div>p{
                 color: rgb(50, 50, 50);
-                font-family: Arial,sans-serif;
+                font-family: Camphor,sans-serif;
                 font-size: 1.8vw;
                 padding-top: 0;
                 font-weight: 500;
@@ -884,7 +885,7 @@ img {vertical-align: middle;}
         width: 70%;
         float: left; 
         padding-left: 5%;
-        font-family: Arial, sans-serif;
+        font-family: Camphor, sans-serif;
         padding-top: .5rem;
      
 }
@@ -910,7 +911,7 @@ img {vertical-align: middle;}
         border-radius: .3rem;
         background-color: #14bef0;
         color: white;
-        font-family:Arial, sans-serif;
+        font-family:Camphor, sans-serif;
         font-size: .6rem;
         font-weight: 600;
         border: none;
@@ -978,7 +979,7 @@ img {vertical-align: middle;}
         margin-top:auto;
         margin-bottom: 3vw;
         margin-right: 1vw;
-        font-family: Arial, sans-serif;
+        font-family: Camphor, sans-serif;
         font-size: 1.7vw;
         font-weight: 300;
         display: button;

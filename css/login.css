@@ -1,0 +1,138 @@
+.login-menu{
+       width:35%;
+       margin-left:auto;
+       margin-right: auto;
+       
+       display: grid;
+       grid-template-columns: repeat(2, 1fr);
+
+}
+.login-menu>input{
+       width:80%;
+       margin:auto;
+       font-family: Arial, sans-serif;
+       font-size: 1.2vw;
+       padding-top: 1.5vw;
+       padding-bottom: 1.5vw;
+       border:none ;
+       background-color: white;
+       cursor: pointer;
+       
+}
+.login-menu>input:hover{
+        font-weight: 600;
+        color: #14bef0;
+}
+.login-ul{
+        width: 65%;
+        border: .5px solid gainsboro;
+        margin-left: auto;
+        margin-right: auto;
+}
+.login-maindiv{
+        width: 65%;
+        margin-left:auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 4vw;  
+}
+.login-maindiv>div{
+        width:100%;
+}
+@media only screen and (max-width: 425px) {
+        .login-maindiv{
+                width: 65%;
+                margin-left:auto;
+                margin-right: auto;
+                display: flex;
+                flex-direction: column;
+                margin-top: 2vw;  
+        }       
+}
+.login-maindiv>div>img{
+        width:90%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+}
+.login-form{
+        margin:1.5vw;
+        border:1px solid  gainsboro;
+        display:flex;
+        flex-direction: column;
+        padding:2vw;
+        font-family: Arial,sans-serif;
+        color: rgb(88, 84, 84);
+        font-weight: 500;
+}
+.login-form>p{
+        font-size: 1vw;
+        margin-bottom: .5vw;
+     
+}
+.login-form>input{
+        height: 2.6vw;
+}
+.login-form>div>input{
+        margin-top: 1.3vw;
+        margin-bottom: 1vw;
+        height:1vw;
+}
+.login-form>div>label{
+        font-size: .8vw;
+        margin-left: .5vw;
+        color: rgb(118, 118, 118);
+}
+input[type=checkbox] {
+        position: relative;
+              cursor: pointer;
+   }
+   input[type=checkbox]:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 1.5vw;
+        height: 1.5vw;
+        top: 0;
+        left: 0;
+        border: 1px solid #555555;
+        border-radius:0;
+        background-color: white;
+}
+   input[type=checkbox]:checked:after {
+        content: "";
+        display: block;
+        width: .5vw;
+        height: .9vw;
+        border: solid #077191;
+        border-width: 0 2px 2px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+        position: absolute;
+        top: .3vw;
+        left: .6vw;
+        
+}
+.login-form>input[type=button]{
+        height: 8vh;
+        background-color: #14bef0;
+        border: #14bef0;
+        border-radius: .5vh;
+        font-size: 1.2vw;
+        color: white;
+        margin-top: 1vw;
+        cursor: pointer;
+}
+.login-form>input[type=button]:active{
+        height: 8vh;
+        background-color: #4ac2e7;
+        border:1px solid #000000;
+        border-radius: .5vh;
+        font-size: 1.2vw;
+        color: white;
+        margin-top: 1vw;
+        cursor: pointer;
+}
