@@ -1,12 +1,9 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: Camphor, Helvetica, Arial, sans-serif;
     color: #303033;
 }
 
-body>div:nth-child(1) {
+#first_div>div:nth-child(1) {
     width: 100%;
     height: 572px;
     background-color: #f8f8fb;
@@ -15,11 +12,10 @@ body>div:nth-child(1) {
     align-items: center;
 }
 
-body>div:nth-child(1)>div {
+#first_div>div:nth-child(1)>div {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 70%;
+    width: 33%;
 }
 
 #download_image>img {
@@ -91,7 +87,6 @@ input::-webkit-inner-spin-button {
     display: inline-block;
     width: 123px;
     height: 50px;
-    /* padding: 15px 30px; */
     background-color: #14bef0;
     border: 0;
     color: #fff;
@@ -112,7 +107,6 @@ footer {
     padding: 48px 0;
     color: #fff;
     font-size: 14px;
-    /* height: 513px; */
 }
 
 #top_footer {
@@ -142,6 +136,7 @@ footer {
     font-size: 14px;
     line-height: 20px;
     cursor: pointer;
+    margin: 0;
 }
 
 #top_footer>div>p:hover,
@@ -171,75 +166,84 @@ footer {
 }
 
 @media all and (max-width:1249px) {
-    body>div:nth-child(1) {
+    #first_div{
+        background-color: #f0f0f5;
+        padding: 16px;
+    }
+    #first_div>div:nth-child(1) {
         width: 100%;
         height: auto;
-        padding-top: 16px;
-        padding-bottom: 16px;
         background-color: #f0f0f5;
-        
-        display: block;
-
+        border-bottom: 1px solid #eaeaea;
     }
 
-    body>div:nth-child(1)>div:nth-child(1) {
+    #first_div>div:nth-child(1)>div:nth-child(1) {
         height: 208px;
         width: 100%;
         border-bottom: 1px solid #d4d4d4;
     }
 
-    body>div:nth-child(1)>div>img {
+    #first_div>div:nth-child(1)>div>img {
         display: inline-block;
         margin: auto;
     }
 
-    body>div:nth-child(1)>div:nth-child(2) {
-        padding: 16px;
+    #first_div>div:nth-child(1)>div:nth-child(2) {
         border: 0;
         display: block;
     }
 
-    body>div:nth-child(1)>div:nth-child(2)>img {
-        width: 45px;
-        height: 45px;
+    #first_div>div:nth-child(2){
+        display: flex;
+        padding-top: 16px;
+        align-items: center;
+    }
+
+    #first_div>div:nth-child(2)>img {
+        width: 40px;
+        height: 40px;
         border-radius: 4px;
+        margin-right: 10px;
     }
 
-    body>div:nth-child(1)>div:nth-child(2)>div {
-        display: inline-block;
+    #first_div>div:nth-child(2)>div {
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        align-items: center;
     }
 
-    body>div:nth-child(1)>div:nth-child(2)>div>p {
+    #first_div>div:nth-child(2)>div>p {
         font-size: 18px;
         font-weight: 700;
+        margin: 0;
     }
 
-    body>div:nth-child(1)>div:nth-child(2)>div>span {
+    #first_div>div:nth-child(2)>div>span {
         font-size: 14px;
     }
 
-    body>div:nth-child(1)>div:nth-child(3) {
+    #first_div>div:nth-child(3) {
         display: block;
         height: auto;
         border: 0;
-        padding: 16px;
         padding-top: 0;
         font-size: 14px;
     }
 
-    body>div:nth-child(1)>div:nth-child(3)>p>span {
+    #first_div>div:nth-child(3)>p>span {
         color: #14bef0;
         font-size: 18px;
         font-weight: 700;
     }
 
-    body>div:nth-child(1)>div:nth-child(4) {
+    #first_div>div:nth-child(4) {
         display: flex;
         width: 100%;
         margin: auto;
     }
 
-    body>div:nth-child(1)>div:nth-child(4)>button {
+    #first_div>div:nth-child(4)>button {
         width: 100%;
         height: 46px;
         background-color: #28328c;
@@ -274,6 +278,10 @@ footer {
         flex-wrap: wrap;
     }
 
+    footer>div>div>p{
+        margin: 0;
+    }
+
     footer>div>div>p+span{
         font-size: 18px;
         font-weight: bold;
@@ -285,6 +293,10 @@ footer {
         margin-left: 25px;
         line-height: 30px;
         display: none;
+    }
+
+    .hide_content > p{
+        margin: 0;
     }
 
     .hide_content > p:nth-child(1){
