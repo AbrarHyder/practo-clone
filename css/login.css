@@ -74,7 +74,12 @@
 }
 .login-form>input{
         height: 2.6vw;
+        outline: none;
 }
+.login-form>input:focus{
+        border:1px solid #14bef0;
+}
+
 .login-form>div>input{
         margin-top: 1.3vw;
         margin-bottom: 1vw;
