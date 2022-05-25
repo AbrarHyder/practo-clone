@@ -7,7 +7,7 @@
         grid-template-columns: repeat(2, 1fr);
  
  }
- .signup-menu>input{
+ .signup-menu>a>input{
         width:80%;
         margin:auto;
         font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@
         cursor: pointer;
         
  }
- .signup-menu>input:hover{
+ .signup-menu>a>input:hover{
          font-weight: 600;
          color: #14bef0;
  }
