@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/findDoctors.css">
+</head>
+<body >
+    <div class="banner">
+        <div>
+          <p class="upperHead">Your home for heatlh</p>
+          <p>Find and Book</p>
+        </div>
+        
+        <div class="inp">
+           <input  placeholder="Search location" value="" class="firstInput">
+           <input  placeholder="Search doctors, clinics, hospitals, etc." value="" >
+        </div>
+
+           
+        <div class="belowInput">
+            <p>Popular searches:</p>
+            <a href="">Dermatologist</a>
+            <a href="">Pediatrician</a>
+            <a href="">Gynecologist/Obstetrician</a>
+            <a href="">Others</a>
+          </div> 
+       
+          <div class="container1">
+            <div>
+                <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSms5mnxCLQ8b0VqtoK84PmzQKekDvBK-Lo5w&usqp=CAU">
+                <p>Consult with a doctor</p>
+                  </a>
+            </div>
+            <div>
+                <a href="">
+                <img src="data:image/png;base64,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">
+                <p>Order Medicines</p>
+            </a>
+            </div>
+            <div>
+                <a href="">
+                <img src="data:image/png;base64,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">
+                <p>View medical records</p>
+            </a>
+                
+            </div>
+            <div>
+                <a href="">
+                <img src="https://image.shutterstock.com/image-vector/test-tube-icon-260nw-328479113.jpg">
+                <p>Book test</p>
+            </a>
+            </div>
+            <div>
+                <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7Tzbx76QntMl2IRUpYs8brJz6RkEU9aWLBA&usqp=CAU">
+                <p>Read articles</p>
+            </a>
+            </div>
+            <div>
+                <a href="">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRx7D2cew0yoYDygO8THq8BpcxWvPdUlL4NFA&usqp=CAU">
+                <p>For healthcare providers</p>
+            </a>
+            </div>
+        </div>
+    </div>
+    <div class="container2">
+        <div class="left1">
+            <p style="font-size:40px;;">Safety of your data is our <br><b>top priority.</b></p>
+            <p><b style='color:skyblue'>✔ </b>Multi-level security checks</p>
+            <p><b style='color:skyblue'>✔ </b>Multiple data backups</p>
+            <p><b style='color:skyblue'>✔ </b>Stringent data privacy-policies</p>
+            <button>Read more</button>
+        </div>
+        <div class="right1">
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/security_1.4f45ac92aba979dac915f864df632d90.png">
+        </div>
+    </div>
+    <div class="container3">
+        <div>
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/security_2.654a7085bfa74c726f26b64edaafd9a5.png">
+            <p>256-bit<br>encryption</p>
+        </div>
+        <div>
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/security_3.a73921ca6e980ed186518d7cb0ce64bf.png">
+            <p>ISO 27001<br>certified</p>
+
+        </div>
+        <div>
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/security_4.216e25d35038f0e7f6d8a514727fa67a.png">
+            <p>HIPPAA <br>compliant data centers</p>
+        </div>
+        <div>
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/security_5.cf6e04c57178071a67c219b43066ffcf.png">
+            <p>DSCI <br>member</p>
+        </div>
+    </div>
+
+    <div class="container4">
+        <div class="left2">
+            <p style="font-size: 40px;color:black;" >Instant appointment with <br>doctors.<b>Guaranteed.</b></p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">100,000</b> Verified doctors</p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">3M+</b> Patient recommendations</p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">25M</b> Patients/year</p>
+            <div class="findMeThe"><a>Find me the right doctor</a></div>
+            <div class="slider1">
+                <div class="lbutton"><p><</p></div>
+                <div class="slide1div1">
+                    <p class="slider1p1">
+                        I had severe pain in chest as well blood in cough. Now its all fine. If i would have gotten late then I wouldn't be writing this. Thanks Practo!
+                    </p>
+                    <div class="slider1div2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWOcMqQZNXQgHvho0w50KO4H6veAnR0YCFg&usqp=CAU" class="slider1img1">
+                        <p class="slider1p2">
+                            Anuupam Purohit
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rbutton"><p>></p></div>
+            </div>
+        </div>
+        <div class="right2">
+            <video width="250" height="480" autoplay loop>
+                <source  src="https://www.practostatic.com/web-assets/home/assets/videos/appointment.700ce682eaec91bf93b6574cb8f09cd0.webm" type="video/mp4">
+              </video>
+        </div>
+    </div>
+    
+
+    <div class="container5">
+        <div class="right3">
+            <video width="250" height="480" autoplay loop>
+                <source  src="https://www.practostatic.com/web-assets/home/assets/videos/consult.099446892618434cc8a038d7844c4380.webm" type="video/mp4">
+              </video>
+        </div>
+
+        <div class="left3">
+            <p style="font-size: 40px;color:black;" >Skip the waiting room.<br><b>Consult with a doctor</b></p>
+            <p><b style='color:skyblue'>✔ </b>Fees starting at <b style="color:#787887;">₹99</b></p>
+            <p><b style='color:skyblue'>✔ </b>Verified doctors respond in <b style="color:#787887;">5 minutes</b></p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">100%</b>  Private and confidential</p>
+            <div class="consultNow"><a>Consult Now</a></div>
+            <div class="slider2">
+                <div class="lbutton2"><p><</p></div>
+                <div class="slide2div1">
+                    <p class="slider2p1">
+                        I had severe pain in chest as well blood in cough. Now its all fine. If i would have gotten late then I wouldn't be writing this. Thanks Practo!
+                    </p>
+                    <div class="slider2div2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWOcMqQZNXQgHvho0w50KO4H6veAnR0YCFg&usqp=CAU" class="slider1img1">
+                        <p class="slider2p2">
+                            Anuupam Purohit
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rbutton2"><p>></p></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container6">
+        <div class="left2">
+            <p style="font-size: 40px;color:black;" >Get all your medicines. <br><b>Everytime. On time.</b></p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">100,000</b> Verified doctors</p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">3M+</b> Patient recommendations</p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">25M</b> Patients/year</p>
+            <div class="findMeThe"><a>Find me the right doctor</a></div>
+            <div class="slider1">
+                <div class="lbutton"><p><</p></div>
+                <div class="slide1div1">
+                    <p class="slider1p1">
+                        I had severe pain in chest as well blood in cough. Now its all fine. If i would have gotten late then I wouldn't be writing this. Thanks Practo!
+                    </p>
+                    <div class="slider1div2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWOcMqQZNXQgHvho0w50KO4H6veAnR0YCFg&usqp=CAU" class="slider1img1">
+                        <p class="slider1p2">
+                            Anuupam Purohit
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rbutton"><p>></p></div>
+            </div>
+        </div>
+        <div class="right2">
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/order.c84fc07b0be8a7e8d4db432eb4e606a2.svg" alt="">
+        </div>
+    </div>
+
+    <div class="container7">
+        <div class="right3">
+           <img src="https://www.practostatic.com/web-assets/home/assets/images/record.bfc5241f9b15340a32c98eb360d1005a.svg" alt="">
+        </div>
+
+        <div class="left3">
+            <p style="font-size: 40px;color:black;" >Skip the waiting room.<br><b>Consult with a doctor</b></p>
+            <p><b style='color:skyblue'>✔ </b>Fees starting at <b style="color:#787887;">₹99</b></p>
+            <p><b style='color:skyblue'>✔ </b>Verified doctors respond in <b style="color:#787887;">5 minutes</b></p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">100%</b>  Private and confidential</p>
+            <div class="consultNow"><a>Consult Now</a></div>
+            <div class="slider2">
+                <div class="lbutton2"><p><</p></div>
+                <div class="slide2div1">
+                    <p class="slider2p1">
+                        I had severe pain in chest as well blood in cough. Now its all fine. If i would have gotten late then I wouldn't be writing this. Thanks Practo!
+                    </p>
+                    <div class="slider2div2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWOcMqQZNXQgHvho0w50KO4H6veAnR0YCFg&usqp=CAU" class="slider1img1">
+                        <p class="slider2p2">
+                            Anuupam Purohit
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rbutton2"><p>></p></div>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container8">
+        <div class="left2">
+            <p style="font-size: 40px;color:black;" >Instant appointment with <br>doctors.<b>Guaranteed.</b></p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">100,000</b> Verified doctors</p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">3M+</b> Patient recommendations</p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">25M</b> Patients/year</p>
+            <div class="findMeThe"><a>Find me the right doctor</a></div>
+            <div class="slider1">
+                <div class="lbutton"><p><</p></div>
+                <div class="slide1div1">
+                    <p class="slider1p1">
+                        I had severe pain in chest as well blood in cough. Now its all fine. If i would have gotten late then I wouldn't be writing this. Thanks Practo!
+                    </p>
+                    <div class="slider1div2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWOcMqQZNXQgHvho0w50KO4H6veAnR0YCFg&usqp=CAU" class="slider1img1">
+                        <p class="slider1p2">
+                            Anuupam Purohit
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rbutton"><p>></p></div>
+            </div>
+        </div>
+        <div class="right2">
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/provider.c4a3d938da109434de6ce3a9046bbf42.png" alt="">
+        </div>
+    </div>
+
+    <div class="container9">
+        <div class="right3">
+            <img src="https://www.practostatic.com/web-assets/home/assets/images/download.a9fb5307ceed47df0af1f39cf4e95519.png" alt="">
+        </div>
+
+        <div class="left3">
+            <p style="font-size: 40px;color:black;" >Skip the waiting room.<br><b>Consult with a doctor</b></p>
+            <p><b style='color:skyblue'>✔ </b>Fees starting at <b style="color:#787887;">₹99</b></p>
+            <p><b style='color:skyblue'>✔ </b>Verified doctors respond in <b style="color:#787887;">5 minutes</b></p>
+            <p><b style='color:skyblue'>✔ </b><b style="color:#787887;">100%</b>  Private and confidential</p>
+            <div class="consultNow"><a>Consult Now</a></div>
+            <div class="slider2">
+                <div class="lbutton2"><p><</p></div>
+                <div class="slide2div1">
+                    <p class="slider2p1">
+                        I had severe pain in chest as well blood in cough. Now its all fine. If i would have gotten late then I wouldn't be writing this. Thanks Practo!
+                    </p>
+                    <div class="slider2div2">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShWOcMqQZNXQgHvho0w50KO4H6veAnR0YCFg&usqp=CAU" class="slider1img1">
+                        <p class="slider2p2">
+                            Anuupam Purohit
+                        </p>
+                    </div>
+                </div>
+
+                <div class="rbutton2"><p>></p></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="../Js/findDoctor.js"></script>
+</html>
