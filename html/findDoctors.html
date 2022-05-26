@@ -4,10 +4,223 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://kit.fontawesome.com/5594c2eb28.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png">
+    <link rel="stylesheet" href="/practo-clone/css/header.css">
     <link rel="stylesheet" href="../css/findDoctors.css">
+    <link rel="stylesheet" href="/practo-clone/css/footer.css">
+    <title>Document</title>
 </head>
 <body >
+
+    <header>
+        <nav>
+            <div>
+                <i class="fa-solid fa-bars" id="menu_icon" onclick="show_menu()"></i>
+                <a href="/practo-clone/html/home.html">
+                    <div id="logo">
+                        <img src="https://futuremedicineindia.com/wp-content/uploads/2020/03/practo1.jpg" alt="">
+                    </div>
+                </a>
+
+                <div id="menu_hide">
+                    <a href="/practo-clone/html/findDoctors.html">
+                        <div>
+                            <span>Find Doctors</span>
+                            <p>Book an appointment</p>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="/practo-clone/html/videoConsult.html">
+                        <div>
+                            <span>Video Consult</span>
+                            <p>Consult top doctors</p>
+                        </div>
+                    </a>
+
+                    <a href="/practo-clone/html/medicines.html">
+                        <div>
+                            <span>Medicines</span>
+                            <p>Practo pharmacy</p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div>
+                            <span>Lab Tests</span>
+                            <p>Book tests & checkup</p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div>
+                            <span>Surgeries</span>
+                            <p>Expert surgical care</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div id="menu_visible">
+                    <span style="display: none;">
+                        <div id="new">NEW</div> For Corporates
+                    </span>
+                    <span>For Providers</span>
+                    <span>Security & help</span>
+                    <button><a href="/practo-clone/html/login.html">Login/Signup</a> </button>
+                </div>
+            </div>
+
+            <div>
+                <div id="phone">
+                    <div>
+                        <img src="https://www.practostatic.com/subscriptions/images/explore-plus-tag.png" alt="">
+                    </div>
+                    <button>Sign In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="slider">
+        <div>
+            <i class="fa-solid fa-x" class="menu_icon" onclick="close_menu()"></i>
+            <div id="logo">
+                <img src="https://futuremedicineindia.com/wp-content/uploads/2020/03/practo1.jpg" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <span>Practo</span>
+                <img src="	https://www.practostatic.com/subscriptions/images/plus-logo-mini.png
+                    " alt="">
+                <p>Health plans for you and your family</p>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+        <hr>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span><b>Find Doctors </b>- Book an appointment</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <span><b>Video Consult </b>- Consult top doctors</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span><b>Medicines </b>- Practo pharmacy</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <span><b>Lab Tests </b>- Book tests & checkup/span
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-user-nurse"></i>
+                <span><b>Surgeries </b>- Expert surgical care</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div id="download">
+            <div>
+                <div>
+                    <i class="fa-regular fa-mobile-screen-button"></i>
+                </div>
+                <div>
+                    <span><b>Download the app</b></span>
+                    <p>Faster & complete healthcare experince</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-brands fa-readme"></i>
+                <span>Read health articles</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-book-medical"></i>
+                <span>View medical records</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-capsules"></i>
+                <span>Read about medicines</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-house-medical"></i>
+                <span>Practo for Providers</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <hr>
+
+        <div class="list">
+            <div>
+                <span>Data security</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Help</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Contact us</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Terms of service</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+    </div>
+
+
+<!--       **********home page*****************     -->
+
+
     <div class="banner">
         <div>
           <p class="upperHead">Your home for heatlh</p>
@@ -253,8 +466,145 @@
         </div>
         
     </div>
+<<<<<<< HEAD
     <!-- <div class="abc"></div> -->
+=======
+
+
+    <!-- **********************footer***************************** -->
+
+
+    <div id="first_div">
+        <div>
+            <img src="https://www.practostatic.com/consumer-home/mweb/images/1544525429/app-download-banner.svg" alt="">
+        </div>
+
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png" alt="">
+            <div>
+                <p>Download the Practo app</p>
+                <span>Get Rs. 200 HealthCash</span>
+            </div>
+        </div>
+
+        <div>
+            <p><span>✓ </span>Get Rs. 200 Health Cash</p>
+            <p><span>✓ </span>Live medicine order tracking</p>
+            <p><span>✓ </span>Exclusive healthcare packages</p>
+        </div>
+
+        <div>
+            <button>Download the app now</button>
+        </div>
+    </div>
+
+
+    <footer>
+        <div>
+            <div id="expand1">
+                <p><b>Practo</b></p>
+                <span id="cross1">+</span>
+                <div class="hide_content" id="content1">
+                    <p>About</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                    <p>Press</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+
+            <div id="expand2">
+                <p><b>For Patients</b></p>
+                <span id="cross2">+</span>
+                <div class="hide_content" id="content2">
+                    <p>Search for doctors</p>
+                    <p>Search for clinics</p>
+                    <p>Search for hospitals</p>
+                    <p>Book Diagnostic Tests</p>
+                    <p>Book Full Body Checkups</p>
+                    <p>Practo Plus</p>
+                    <p>Covid Hospital listing</p>
+                    <p>Practo Care Clinics</p>
+                    <p>Read health article</p>
+                    <p>Read about medicines</p>
+                    <p>Practo drive</p>
+                    <p>Health app</p>
+                </div>
+            </div>
+
+            <div id="expand3">
+                <p><b>For Doctors</b></p>
+                <span id="cross3">+</span>
+                <div class="hide_content" id="content3">
+                    <p>Practo Consult</p>
+                    <p>Practo Health Feed</p>
+                    <p>Practo Profile</p>
+                </div>
+            </div>
+
+            <div id="expand4">
+                <p><b>For Clinics</b></p>
+                <span id="cross4">+</span>
+                <div class="hide_content" id="content4">
+                    <p>Ray by Practo</p>
+                    <p>Practo Reach</p>
+                    <p>Ray Tab</p>
+                    <p>Practo Pro</p>
+                </div>
+            </div>
+
+            <div id="expand5">
+                <p><b>For Hospitals</b></p>
+                <span id="cross5">+</span>
+                <div class="hide_content" id="content5">
+                    <p>Insta by Practo</p>
+                    <p>Qikwell by Practo</p>
+                    <p>Practo Profile</p>
+                    <p>Practo Reach</p>
+                </div>
+            </div>
+
+            <div id="expand6">
+                <p><b>More</b></p>
+                <span id="cross6">+</span>
+                <div class="hide_content" id="content6">
+                    <p>Help</p>
+                    <p>Developers</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Healthcare Directory</p>
+                    <p>Practo Health Wiki</p>
+                </div>
+            </div>
+
+            <div id="expand7">
+                <p><b>Social</b></p>
+                <span id="cross7">+</span>
+                <div class="hide_content" id="content7">
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Linkedin</p>
+                    <p>Youtube</p>
+                    <p>Github</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_logo">
+            <img src="https://wp.cghnyc.com/media/Practo-w-trademark-hero.svg" alt="">
+        </div>
+
+        <div>
+            <span>Copyright © 2017, Practo. All rights reserved.</span>
+        </div>
+    </footer>
+
+>>>>>>> ed1965961959e5f2ec31aa991aa4783e7c1e32a1
 </body>
+<script src="/practo-clone/Js/header.js">
+    // createnavbar()
+</script>
+<script src="/practo-clone/Js/footer.js"></script>
 <script src="../Js/findDoctor.js"></script>
 </html>
 

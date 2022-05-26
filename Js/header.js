@@ -8,16 +8,16 @@ function createnavbar() {
         `
             <div>
                 <i class="fa-solid fa-bars" id="menu_icon" onclick="show_menu()"></i>
-                <a href="">
+                <a href="/practo-clone/html/home.html">
                     <div id="logo">
                         <img src="https://futuremedicineindia.com/wp-content/uploads/2020/03/practo1.jpg" alt="">
                     </div>
                 </a>
 
                 <div id="menu_hide">
-                    <span><a href="#">Find Doctors</a></span>
-                    <span><a href="">Video Consult</a></span>
-                    <span><a href="">Medicines</a></span>
+                    <span><a href="/practo-clone/html/findDoctors.html">Find Doctors</a></span>
+                    <span><a href="/practo-clone/html/videoConsult.html">Video Consult</a></span>
+                    <span><a href="/practo-clone/html/medicines.html">Medicines</a></span>
                     <span><a href="">Lab Tests</a></span>
                     <span><a href="">Surgeries</a></span>
                 </div>
@@ -30,7 +30,7 @@ function createnavbar() {
                     </span>
                     <span><a href="">For Providers</a></span>
                     <span><a href="">Security & help</a></span>
-                    <button><a href="">Login/Signup</a></button>
+                    <button><a href=/practo-clone/html/login.html">Login/Signup</a></button>
                 </div>
             </div>
 
@@ -56,4 +56,3 @@ function close_menu() {
 
 }
 
-createnavbar()

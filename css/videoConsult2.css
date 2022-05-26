@@ -1,0 +1,110 @@
+
+        #container{
+            background-color: #F0F0F5;
+            border: 2px solid #F0F0F5 ;
+            
+        }
+        #headLogo{
+            
+            padding-top: 1%;
+            padding-bottom: 1%;
+            background-color: #FFFFFF;
+            
+        }
+        #logoImg{
+            width: 7%;
+            padding-left: 10%;
+            background-color: #FFFFFF;
+            
+        }
+        #tailLogo{
+            background-color: #F0F0F5;
+            height: 670px;
+            width: 100%;
+            
+            
+        }
+        #tailLogoDiv{
+            background-color: #FFFFFF;
+            display: flex;
+            height: 530px;
+            width: 70%;
+            margin-left: 15%;
+            margin-top: 5vh;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+            
+            
+            
+        }
+        #inputDiv{
+            background-color: #FFFFFF;
+            padding-top: 2%;
+            
+            width: 70%;
+            padding-left: 5%;
+            
+            
+        }
+        #inputDiv>h2{
+            font-size: 28px;
+            font-family: Camphor,sans-serif;
+            margin-left: 10%;
+            background-color: #FFFFFF;
+           
+
+        }
+        #inputDiv>h4{
+            
+            font-family: Camphor,sans-serif;
+            font-weight: 500;
+            font-size: 20px;
+            margin-left: 10%;
+            background-color: #FFFFFF;
+            
+            
+           
+        }
+        #inp{
+            width: 30%;
+            border: solid 1px #e0e0e5;
+            padding: 10px;
+            font-size: 13px;
+            border-radius: 2px;
+            margin-left: 10%;
+            background-color: white;
+            border: 1px solid #14bef0;
+        }
+        #btn4{
+            width: 30%;
+            display: inline-block;
+            line-height: 1.56;
+            padding: 9px 32px;
+            font-size: 18px;
+            margin-top: 16px;
+            border-radius: 4px;
+            background: #14bef0;
+            color: #fff;
+            border: 1px solid #14bef0;
+            font-weight: 500;
+            text-align: center;
+            margin-left: 10%;
+            
+            
+        }
+        #imgDiv{
+            background-color: #FFFFFF;
+            
+        }
+        #flexImg{
+            padding-top: 200px;
+            width: 120%;
+            background-color: #FFFFFF;
+            
+        }
+        #flexText{
+            
+            font-family: Camphor,sans-serif;
+            background-color: #FFFFFF;
+        }
+
+        
