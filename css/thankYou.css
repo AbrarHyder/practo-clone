@@ -1,0 +1,30 @@
+
+#image{
+    margin-left: 36%;
+    margin-top: 5%;
+}
+h4{
+    font-family: Camphor,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    margin-left: 38%;
+    background-color: #FFFFFF;
+}
+#btn7{
+    width: 30%;
+    display: inline-block;
+    line-height: 1.56;
+    padding: 9px 32px;
+    font-size: 18px;
+    margin-top: 16px;
+    border-radius: 4px;
+    background: #14bef0;
+    color: #fff;
+    border: 1px solid #14bef0;
+    font-weight: 500;
+    text-align: center;
+    margin-left: 35%;
+    margin-bottom: -5%;
+    
+    
+}
