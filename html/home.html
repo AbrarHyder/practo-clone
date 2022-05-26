@@ -1,268 +1,630 @@
 <html lang="en">
+
 <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <link href="/css/home.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png">
-        <title>Hompage</title>
+    <link rel="stylesheet" href="/practo-clone/css/footer.css">
+    <link href="/practo-clone/css/home.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://kit.fontawesome.com/5594c2eb28.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon"
+        href="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png">
+    <link rel="stylesheet" href="/practo-clone/css/header.css">
+    <title>Hompage</title>
 </head>
+
 <body>
-<div class="home-search">
-<div class="home-searchbar">
-        <input class="location" id="locate" type="text" placeholder="City" />
-        <input class="doctors" id="doctors" type="text" placeholder="Search doctors, clinics, hospitals, etc." />
-</div>
-<div class="home-srimg">
-<img class="home-coupon" src="https://www.practostatic.com/subscriptions/images/plus-tag.png">
-</div>
-</div>
 
-<div class="main1a">
-        <div class="main1a1">
-              <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_practo_care.png"/>
-              <p>Choose the experts in end to end surgical care.</p>  
-              <h2>You are in safe hands</h2>
-              <input id="1a1button" type="button" value="Know More"/>
-        </div>
-        <div class="main1a2">
-                <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png" alt="banner"/>
-        </div>
-</div>
+    <header>
+        <!-- style="justify-content: space-evenly" -->
+        <nav>
+            <div>
+                <!-- id="show_menu" -->
+                <i class="fa-solid fa-bars" id="menu_icon" onclick="show_menu()"></i>
+                <!-- style="margin-left: 100px; margin-right:50px;" -->
+                <a href="/practo-clone/html/home.html">
+                    <div id="logo">
+                        <img src="https://futuremedicineindia.com/wp-content/uploads/2020/03/practo1.jpg" alt="">
+                    </div>
+                </a>
 
+                <div id="menu_hide">
+                    <a href="/practo-clone/html/findDoctors.html">
+                        <div>
+                            <span>Find Doctors</span>
+                            <p>Book an appointment</p>
+                            <div></div>
+                        </div>
+                    </a>
 
-<div class="home-main2">
-        <div class="home-main2a1">
-                <div class="main2a11">
-                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png"/>
-                </div>
-                <div class="main2a12">
-                <h2>Instant video consulation</h2>
-                <p>Connect within 60 secs</p>
-                </div>
-        </div>
-        <div class="home-main2a1">
-                <div class="main2a11">
-                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_find_doctors.png"/>
-                </div>
-                <div class="main2a12">
-                        <h2>Find doctors near you</h2>
-                        <p>Confirmed appointments</p>
-                </div>
-                
-        </div>
-        <div class="home-main2a1">
-                <div class="main2a11">
-                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_medicines.png"/>
-                </div>
-                <div class="main2a12">
-                        <h2>Medicines</h2>
-                        <p>Essentials at your doorstep</p>
-                </div>
-               
-        </div>
-        <div class="home-main2a1">
-                <div class="main2a11">
-                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_lab_tests.png"/>
-                </div>
-                <div class="main2a12">
-                        <h2>Lab Tests</h2>
-                        <p>Sample pickup at your home</p>
-                </div>
-               
-        </div>
-        <div class="home-main2a1">
-                <div class="main2a11">
-                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_surgeries.png"/>
-                </div>
-                <div class="main2a12">
-                        <h2>Surgeries</h2>
-                        <p>Safe and trusted surgery centers</p>
-                </div>
+                    <a href="/practo-clone/html/videoConsult.html">
+                        <div>
+                            <span>Video Consult</span>
+                            <p>Consult top doctors</p>
+                        </div>
+                    </a>
 
-        </div>
-</div>
-<div class="home-main3">
+                    <a href="/practo-clone/html/medicines.html">
+                        <div>
+                            <span>Medicines</span>
+                            <p>Practo pharmacy</p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div>
+                            <span>Lab Tests</span>
+                            <p>Book tests & checkup</p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div>
+                            <span>Surgeries</span>
+                            <p>Expert surgical care</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <!-- style="margin-right: 50px;" -->
+                <div id="menu_visible">
+                    <span style="display: none;">
+                        <div id="new">NEW</div> For Corporates
+                    </span>
+                    <span>For Providers</span>
+                    <span>Security & help</span>
+                    <button><a href="/practo-clone/html/login.html">Login/Signup</a> </button>
+                </div>
+            </div>
+
+            <div>
+                <div id="phone">
+                    <div>
+                        <img src="https://www.practostatic.com/subscriptions/images/explore-plus-tag.png" alt="">
+                    </div>
+                    <button>Sign In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="slider">
         <div>
-        <h2>Consult top doctors online for any health concern</h2>
-        <p>Private online consultations with verified doctors in all specialists</p>
+            <i class="fa-solid fa-x" class="menu_icon" onclick="close_menu()"></i>
+            <div id="logo">
+                <img src="https://futuremedicineindia.com/wp-content/uploads/2020/03/practo1.jpg" alt="">
+            </div>
         </div>
-        <input id="homebutton2" type="button" value="View all specialities"/>
-</div>
-<div class="home-maindiv3">
-     <div>
-        <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/irregular-painful+period.png"/>
-        <p>Period doubts or Pregnancy</p>
-        <input class="homebutton3" type="button" value="CONSULT NOW">
-     </div>
-     <div>
-        <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/Acne.png"/>
-        <p>Acne, pimple or skin issues</p>
-        <input class="homebutton3" type="button" value="CONSULT NOW">
-     </div>
-     <div>
-        <img src="https://www.practo.com/consult/static/images/top-speciality-sexology.svg"/>
-        <p>Performance issues in bed</p>
-        <input class="homebutton3" type="button" value="CONSULT NOW">
-     </div>
-     <div>
-        <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/coughing.png"/>
-        <p>Cold, cough or fever</p>
-        <input class="homebutton3" type="button" value="CONSULT NOW">
-     </div>
-     <div>
-        <img src="https://www.practo.com/consult/static/images/top-speciality-pediatric.svg"/>
-        <p>Child not feeling well</p>
-        <input class="homebutton3" type="button" value="CONSULT NOW">
-     </div>
-     <div>
-        <img src="https://www.practostatic.com/acred/search-assets/2/12-mental-wellness.png"/>
-        <p>Depression or anxiety</p>
-        <input class="homebutton3" type="button" value="CONSULT NOW">
-     </div>
-</div>
-<div class="home-main3">
-       
-        <h2>Book an appointment for an in-clinic consultation</h2>
-        <p>Find experienced doctors across all specialties</p>
-       
-</div>
-<div class="home-slide">
-<div class="slider">
+
         <div>
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
-            <h4>Dentist</h4>
-            <p>Teething troubles? Schedule a dental checkup</p>
+            <div>
+                <span>Practo</span>
+                <img src="	https://www.practostatic.com/subscriptions/images/plus-logo-mini.png
+                            " alt="">
+                <p>Health plans for you and your family</p>
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
-        <div>
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-gynecologist@2x.jpg">
-            <h4>Gynecologist/Obstetrician</h4>
-            <p>Explore for women's health, pregnancy and  infertility treatments</p>
+        <hr>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span><b>Find Doctors </b>- Book an appointment</span>
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
-        <div>
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dietitian@2x.jpg">
-            <h4>Dietitian/Nutrition</h4>
-            <p>Get guidance on eating right, weight management and  sports nutrition</p>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <span><b>Video Consult </b>- Consult top doctors</span>
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
-        <div>
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-physiotherapist@2x.jpg">
-            <h4>Physiotherapist</h4>
-            <p>Pulled a muscle? Get it treated by a trained  physiotherapist</p>       
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span><b>Medicines </b>- Practo pharmacy</span>
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
-        <div>
-          <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-general-surgeon@2x.jpg">
-          <h4>General surgeon</h4>
-          <p>Need to get operated? Find the right surgeon</p>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <span><b>Lab Tests </b>- Book tests & checkup/span
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
-        <div>
-           <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-orthopedist@2x.jpg">
-           <h4>Orthopedist</h4>
-            <p>For Bone and joint issues, spinal injuries and more</p> 
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-user-nurse"></i>
+                <span><b>Surgeries </b>- Expert surgical care</span>
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
-          <div>
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-general-doctor@2x.jpg">
-            <h4>General physician</h4>
-            <p>Find the right family doctor in your neighborhood</p> 
+
+        <div id="download">
+            <div>
+                <div>
+                    <i class="fa-regular fa-mobile-screen-button"></i>
+                </div>
+                <div>
+                    <span><b>Download the app</b></span>
+                    <p>Faster & complete healthcare experince</p>
+                </div>
+            </div>
         </div>
-          <div>
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-pediatrician@2x.jpg">
-            <h4>Pediatrician</h4>
-            <p>Child Specialists and Doctors for Infrant</p>
+
+        <div class="list">
+            <div>
+                <i class="fa-brands fa-readme"></i>
+                <span>Read health articles</span>
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
-          <div>
-            <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-gastroenterologist@2x.jpg">
-            <h4>Gastroenterologist</h4>
-            <p>Explore  for  issues related  to digestive system, liver and pancreas</p>  
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-book-medical"></i>
+                <span>View medical records</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-capsules"></i>
+                <span>Read about medicines</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-house-medical"></i>
+                <span>Practo for Providers</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <hr>
+
+        <div class="list">
+            <div>
+                <span>Data security</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Help</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Contact us</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Terms of service</span>
+            </div>
+            <div class="rigth_arrow"></div>
         </div>
     </div>
-</div>
-<div class="home-line"></div>
-<div class="home-main5">
+
+
+    <!--       **********home page*****************     -->
+    <div class="home-search">
+        <div class="home-searchbar">
+            <input class="location" id="locate" type="text" placeholder="City" />
+            <input class="doctors" id="doctors" type="text" placeholder="Search doctors, clinics, hospitals, etc." />
+        </div>
+        <div class="home-srimg">
+            <img class="home-coupon" src="https://www.practostatic.com/subscriptions/images/plus-tag.png">
+        </div>
+    </div>
+
+    <div class="main1a">
+        <div class="main1a1">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_practo_care.png" />
+            <p>Choose the experts in end to end surgical care.</p>
+            <h2>You are in safe hands</h2>
+            <input id="1a1button" type="button" value="Know More" />
+        </div>
+        <div class="main1a2">
+            <img src="https://www.practostatic.com/consumer-home/practo-care/1631634827/dweb_hero_banner.png"
+                alt="banner" />
+        </div>
+    </div>
+
+
+    <div class="home-main2">
+        <div class="home-main2a1">
+            <div class="main2a11">
+                <img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_instant_video_consulation.png" />
+            </div>
+            <div class="main2a12">
+                <h2>Instant video consulation</h2>
+                <p>Connect within 60 secs</p>
+            </div>
+        </div>
+        <div class="home-main2a1">
+            <div class="main2a11">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_find_doctors.png" />
+            </div>
+            <div class="main2a12">
+                <h2>Find doctors near you</h2>
+                <p>Confirmed appointments</p>
+            </div>
+
+        </div>
+        <div class="home-main2a1">
+            <div class="main2a11">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_medicines.png" />
+            </div>
+            <div class="main2a12">
+                <h2>Medicines</h2>
+                <p>Essentials at your doorstep</p>
+            </div>
+
+        </div>
+        <div class="home-main2a1">
+            <div class="main2a11">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_lab_tests.png" />
+            </div>
+            <div class="main2a12">
+                <h2>Lab Tests</h2>
+                <p>Sample pickup at your home</p>
+            </div>
+
+        </div>
+        <div class="home-main2a1">
+            <div class="main2a11">
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_surgeries.png" />
+            </div>
+            <div class="main2a12">
+                <h2>Surgeries</h2>
+                <p>Safe and trusted surgery centers</p>
+            </div>
+
+        </div>
+    </div>
+    <div class="home-main3">
+        <div>
+            <h2>Consult top doctors online for any health concern</h2>
+            <p>Private online consultations with verified doctors in all specialists</p>
+        </div>
+        <input id="homebutton2" type="button" value="View all specialities" />
+    </div>
+    <div class="home-maindiv3">
+        <div>
+            <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/irregular-painful+period.png" />
+            <p>Period doubts or Pregnancy</p>
+            <input class="homebutton3" type="button" value="CONSULT NOW">
+        </div>
+        <div>
+            <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/Acne.png" />
+            <p>Acne, pimple or skin issues</p>
+            <input class="homebutton3" type="button" value="CONSULT NOW">
+        </div>
+        <div>
+            <img src="https://www.practo.com/consult/static/images/top-speciality-sexology.svg" />
+            <p>Performance issues in bed</p>
+            <input class="homebutton3" type="button" value="CONSULT NOW">
+        </div>
+        <div>
+            <img src="https://www.practostatic.com/consult/consult-home/symptoms_icon/coughing.png" />
+            <p>Cold, cough or fever</p>
+            <input class="homebutton3" type="button" value="CONSULT NOW">
+        </div>
+        <div>
+            <img src="https://www.practo.com/consult/static/images/top-speciality-pediatric.svg" />
+            <p>Child not feeling well</p>
+            <input class="homebutton3" type="button" value="CONSULT NOW">
+        </div>
+        <div>
+            <img src="https://www.practostatic.com/acred/search-assets/2/12-mental-wellness.png" />
+            <p>Depression or anxiety</p>
+            <input class="homebutton3" type="button" value="CONSULT NOW">
+        </div>
+    </div>
+    <div class="home-main3">
+
+        <h2>Book an appointment for an in-clinic consultation</h2>
+        <p>Find experienced doctors across all specialties</p>
+
+    </div>
+    <div class="home-slide">
+        <div class="slider">
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dentist@2x.jpg">
+                <h4>Dentist</h4>
+                <p>Teething troubles? Schedule a dental checkup</p>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-gynecologist@2x.jpg">
+                <h4>Gynecologist/Obstetrician</h4>
+                <p>Explore for women's health, pregnancy and infertility treatments</p>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-dietitian@2x.jpg">
+                <h4>Dietitian/Nutrition</h4>
+                <p>Get guidance on eating right, weight management and sports nutrition</p>
+            </div>
+            <div>
+                <img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-physiotherapist@2x.jpg">
+                <h4>Physiotherapist</h4>
+                <p>Pulled a muscle? Get it treated by a trained physiotherapist</p>
+            </div>
+            <div>
+                <img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-general-surgeon@2x.jpg">
+                <h4>General surgeon</h4>
+                <p>Need to get operated? Find the right surgeon</p>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-orthopedist@2x.jpg">
+                <h4>Orthopedist</h4>
+                <p>For Bone and joint issues, spinal injuries and more</p>
+            </div>
+            <div>
+                <img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-general-doctor@2x.jpg">
+                <h4>General physician</h4>
+                <p>Find the right family doctor in your neighborhood</p>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-pediatrician@2x.jpg">
+                <h4>Pediatrician</h4>
+                <p>Child Specialists and Doctors for Infrant</p>
+            </div>
+            <div>
+                <img
+                    src="https://www.practostatic.com/consumer-home/desktop/images/1558283618/sp-gastroenterologist@2x.jpg">
+                <h4>Gastroenterologist</h4>
+                <p>Explore for issues related to digestive system, liver and pancreas</p>
+            </div>
+        </div>
+    </div>
+    <div class="home-line"></div>
+    <div class="home-main5">
         <div class="main5left">
-                <h2>Read the articles form health experts</h2>
-                <p>Health articles that keep you informed  about good  health practices and achive goals</p>
-                <input id="home-articles" type="button" value="See all articles"/>
+            <h2>Read the articles form health experts</h2>
+            <p>Health articles that keep you informed about good health practices and achive goals</p>
+            <input id="home-articles" type="button" value="See all articles" />
         </div>
         <div class="main5right">
-                <div>
-                        <img src="https://www.practostatic.com/fit/5fd27b74d9477cb633445cf3f105078bbc479910" />
-                        <h5>CORONAVIRUS</h5>
-                        <p>12 Coronavirus Myths and Facts That You Should Be Aware Of</p>
-                        <h4>Dr. Diana Borigio</h4>
-                </div>
-                <div>
-                        <img src="https://www.practostatic.com/fit/bade52edc7fb158bf627216bf96c2b881a97f30c" />
-                        <h5>VITAMINS AND SUPPLIMENTS</h5>
-                        <p>Eating Right to Build  Immunity Against Cold and Viral Infections</p>
-                        <h4>Dr. Diana Borigio</h4>
-                </div>
+            <div>
+                <img src="https://www.practostatic.com/fit/5fd27b74d9477cb633445cf3f105078bbc479910" />
+                <h5>CORONAVIRUS</h5>
+                <p>12 Coronavirus Myths and Facts That You Should Be Aware Of</p>
+                <h4>Dr. Diana Borigio</h4>
+            </div>
+            <div>
+                <img src="https://www.practostatic.com/fit/bade52edc7fb158bf627216bf96c2b881a97f30c" />
+                <h5>VITAMINS AND SUPPLIMENTS</h5>
+                <p>Eating Right to Build Immunity Against Cold and Viral Infections</p>
+                <h4>Dr. Diana Borigio</h4>
+            </div>
         </div>
-</div>
-<div class="home-line"></div>
+    </div>
+    <div class="home-line"></div>
 
-<div class="slideshow-heading">
+    <div class="slideshow-heading">
         <h2>What our users have to say</h2>
-</div>
+    </div>
 
-<div class="slideshow-container">
+    <div class="slideshow-container">
 
         <div class="mySlides fade">
-          <div class="text">
-                  <h2>Very helpful. Far easier than doing same things on computer.Allows quick and easy search with speedy booking. Even maintains history of doctors visited.</h2>
-          </div>
-          <div class="text">Amit Sharma</div>
+            <div class="text">
+                <h2>Very helpful. Far easier than doing same things on computer.Allows quick and easy
+                    search with speedy booking. Even maintains history of doctors visited.</h2>
+            </div>
+            <div class="text">Amit Sharma</div>
         </div>
-        
+
         <div class="mySlides fade">
-                <div class="text">
-                        <h2>Very easy to book, maintain history. Hassle free from older versions of booking appointment via telephone..<br>Thanks Practo for making it simple.</h2>
-                </div>
-          <div class="text">Jyoti Bhatia</div>
+            <div class="text">
+                <h2>Very easy to book, maintain history. Hassle free from older versions of booking
+                    appointment via telephone..<br>Thanks Practo for making it simple.</h2>
+            </div>
+            <div class="text">Jyoti Bhatia</div>
         </div>
-        
+
         <div class="mySlides fade">
-                <div class="text">
-                        <h2>Very good app. Well through out about booking/recheduling/canceling an appointment.Also, Doctor's feedback mechanism is good and describes all the basics in a good way</h2>
-                </div>
-          <div class="text">Avinash Kumar</div>
+            <div class="text">
+                <h2>Very good app. Well through out about booking/recheduling/canceling an
+                    appointment.Also, Doctor's feedback mechanism is good and describes all the
+                    basics in a good way</h2>
+            </div>
+            <div class="text">Avinash Kumar</div>
         </div>
-        
+
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <!-- this is sticky card -->
-        <div class="main1a1w">
-                <div class="main1a11">
-                      <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_practo_care.png"/>
-                      <h2>FREE Consultation</h2>
-                      <p>with Practo Care surgeon</p>  
-                      
-                      <input id="1a1button1" type="button" value="KNOW MORE"/>
-                </div>
-                <div class="main1a21">
-                        <img src="https://www.practostatic.com/practo-care/dravid_sm_110122.png" alt="banner"/>
-                </div>
-        </div>
 
-        <div class="statichome-button" id="hb12w">
-        <div >
-                <img src="https://www.practostatic.com/practo-care/dravid_sm_110122.png" alt="">
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+    <!-- this is sticky card -->
+    <div class="main1a1w">
+        <div class="main1a11">
+            <img src="https://www.practostatic.com/consumer-home/desktop/images/1597423628/dweb_practo_care.png" />
+            <h2>FREE Consultation</h2>
+            <p>with Practo Care surgeon</p>
+
+            <input id="1a1button1" type="button" value="KNOW MORE" />
+        </div>
+        <div class="main1a21">
+            <img src="https://www.practostatic.com/practo-care/dravid_sm_110122.png" alt="banner" />
+        </div>
+    </div>
+
+    <div class="statichome-button" id="hb12w">
+        <div>
+            <img src="https://www.practostatic.com/practo-care/dravid_sm_110122.png" alt="">
         </div>
         <p>Get end-to-end surgical care ❯</p>
+    </div>
+
+
+
+    <!-- **********************footer***************************** -->
+
+
+    <div id="first_div">
+        <div>
+            <img src="https://www.practostatic.com/consumer-home/mweb/images/1544525429/app-download-banner.svg" alt="">
         </div>
 
-<script src="/Js/home.js"></script>
- 
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png" alt="">
+            <div>
+                <p>Download the Practo app</p>
+                <span>Get Rs. 200 HealthCash</span>
+            </div>
+        </div>
+
+        <div>
+            <p><span>✓ </span>Get Rs. 200 Health Cash</p>
+            <p><span>✓ </span>Live medicine order tracking</p>
+            <p><span>✓ </span>Exclusive healthcare packages</p>
+        </div>
+
+        <div>
+            <button>Download the app now</button>
+        </div>
+    </div>
+
+    <footer>
+        <div>
+            <div id="expand1">
+                <p><b>Practo</b></p>
+                <span id="cross1">+</span>
+                <div class="hide_content" id="content1">
+                    <p>About</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                    <p>Press</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+
+            <div id="expand2">
+                <p><b>For Patients</b></p>
+                <span id="cross2">+</span>
+                <div class="hide_content" id="content2">
+                    <p>Search for doctors</p>
+                    <p>Search for clinics</p>
+                    <p>Search for hospitals</p>
+                    <p>Book Diagnostic Tests</p>
+                    <p>Book Full Body Checkups</p>
+                    <p>Practo Plus</p>
+                    <p>Covid Hospital listing</p>
+                    <p>Practo Care Clinics</p>
+                    <p>Read health article</p>
+                    <p>Read about medicines</p>
+                    <p>Practo drive</p>
+                    <p>Health app</p>
+                </div>
+            </div>
+
+            <div id="expand3">
+                <p><b>For Doctors</b></p>
+                <span id="cross3">+</span>
+                <div class="hide_content" id="content3">
+                    <p>Practo Consult</p>
+                    <p>Practo Health Feed</p>
+                    <p>Practo Profile</p>
+                </div>
+            </div>
+
+            <div id="expand4">
+                <p><b>For Clinics</b></p>
+                <span id="cross4">+</span>
+                <div class="hide_content" id="content4">
+                    <p>Ray by Practo</p>
+                    <p>Practo Reach</p>
+                    <p>Ray Tab</p>
+                    <p>Practo Pro</p>
+                </div>
+            </div>
+
+            <div id="expand5">
+                <p><b>For Hospitals</b></p>
+                <span id="cross5">+</span>
+                <div class="hide_content" id="content5">
+                    <p>Insta by Practo</p>
+                    <p>Qikwell by Practo</p>
+                    <p>Practo Profile</p>
+                    <p>Practo Reach</p>
+                </div>
+            </div>
+
+            <div id="expand6">
+                <p><b>More</b></p>
+                <span id="cross6">+</span>
+                <div class="hide_content" id="content6">
+                    <p>Help</p>
+                    <p>Developers</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Healthcare Directory</p>
+                    <p>Practo Health Wiki</p>
+                </div>
+            </div>
+
+            <div id="expand7">
+                <p><b>Social</b></p>
+                <span id="cross7">+</span>
+                <div class="hide_content" id="content7">
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Linkedin</p>
+                    <p>Youtube</p>
+                    <p>Github</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_logo">
+            <img src="https://wp.cghnyc.com/media/Practo-w-trademark-hero.svg" alt="">
+        </div>
+
+        <div>
+            <span>Copyright © 2017, Practo. All rights reserved.</span>
+        </div>
+    </footer>
+
+
 </body>
+
+<script src="/practo-clone/Js/header.js">
+        createnavbar()
+</script>
+<script src="/practo-clone/Js/footer.js"></script>
+<script src="/Js/home.js"></script>
+
 </html>

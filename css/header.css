@@ -1,10 +1,7 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
     font-family: Camphor, Helvetica, Arial, sans-serif;
-    color: black;
 }
+
 
 a {
     text-decoration: none;
@@ -14,10 +11,8 @@ nav {
     display: flex;
     width: 100%;
     border-bottom: 2px solid #f0f0f5;
-    /* justify-content: space-between; */
     justify-content: space-evenly;
     margin-top: 5px;
-    /* align-items: center; */
 }
 
 nav>div:nth-child(1) {
@@ -68,6 +63,7 @@ nav>div:nth-child(2) {
     font-size: 11px;
     color: #787887;
     font-weight: normal;
+    margin: 0;
 }
 
 #menu_hide>a>div>div {
@@ -212,14 +208,15 @@ nav>div:nth-child(2) {
 
     #slider {
         width: 90%;
-        /* display: block; */
+        z-index: 100;
+        background-color: #fff;
         position: absolute;
         top: 0;
         left: 0;
         box-shadow: 20px 2px 77px 28px #888;
-        /* transition: all 5s ease-in-out; */
         animation: slide_in 1s ease-in-out;
-        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        height: 100vh;
+        overflow: auto;
     }
 
     @keyframes slide_in {
@@ -251,7 +248,7 @@ nav>div:nth-child(2) {
     }
 
     #slider>div:nth-child(2) {
-        height: 100px;
+        height: 70px;
         /* border-bottom: 1px solid black; */
         line-height: 20px;
         justify-content: space-between
@@ -271,6 +268,11 @@ nav>div:nth-child(2) {
         width: 40px;
         height: 18px;
     }
+    
+    #slider>div:nth-child(2)>div>p{
+        margin: 0;
+    }
+
 
     .rigth_arrow {
         display: inline-block;
@@ -326,5 +328,6 @@ nav>div:nth-child(2) {
     #download>div>div>p{
         font-size: small;
         color: #787887;
+        margin: 0;
     }
 }

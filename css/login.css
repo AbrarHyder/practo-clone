@@ -7,7 +7,7 @@
        grid-template-columns: repeat(2, 1fr);
 
 }
-.login-menu>input{
+.login-menu>a>input{
        width:80%;
        margin:auto;
        font-family: Arial, sans-serif;
@@ -19,7 +19,7 @@
        cursor: pointer;
        
 }
-.login-menu>input:hover{
+.login-menu>a>input:hover{
         font-weight: 600;
         color: #14bef0;
 }

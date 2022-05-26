@@ -4,81 +4,228 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5594c2eb28.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png">
+    <link rel="stylesheet" href="/practo-clone/css/header.css">
+    <link rel="stylesheet" href="/practo-clone/css/footer.css">
+    <link rel="stylesheet" href="/practo-clone/css/videoConsult.css">
     <title>Document</title>
-    <style>
-        #bigimage{
-            display: flex;
-            margin: 0% 10% 0% 10%;
-            border: 1px solid red;
-            
-            
-            
-            
-        }
-        #bigimagetext{
-            width: 70%;
-            
-            border: 1px solid red;
-        }
-        #bigimagetext>h2{
-            font-family: Camphor,sans-serif;
-            font-weight: 600;
-
-        }
-        #bigimagetext>h4{
-            font-family: Camphor,sans-serif;
-            font-weight: 500;
-            color: #6E696B;
-
-        }
-        #bigimagetextlogo{
-            display: flex;
-        }
-        #bigimagetextlogo>h5{
-            font-family: Camphor,sans-serif;
-            font-weight: 400;
-            color: #6E696B;
-        }
-        #bigimagetextlogo1{
-            height: 30px;
-        }
-        #btn{
-            display: inline-block;
-            line-height: 1.56;
-            padding: 9px 32px;
-            font-size: 18px;
-            margin-top: 16px;
-            border-radius: 4px;
-            background: #14bef0;
-            color: #fff;
-            border: 1px solid #14bef0;
-            font-weight: 700;
-            text-align: center;
-        }
-
-        #bigimagetextlogo2{
-            display: flex;
-        }
-        #bigimagetextlogo3{
-            width: 3%;
-        }
-
-        #bigimagepic{
-            border: 1px solid red;
-            
-            
-        }
-        #bigimagepic1{
-            border: 1px solid red;
-            width: 70%;
-        
-        }
-
-
-
-    </style>
+    
 </head>
 <body>
+
+    <header>
+   
+        <nav>
+            <div>
+                
+                <i class="fa-solid fa-bars" id="menu_icon" onclick="show_menu()"></i>
+                
+                <a href="/practo-clone/html/home.html">
+                    <div id="logo">
+                        <img src="https://futuremedicineindia.com/wp-content/uploads/2020/03/practo1.jpg" alt="">
+                    </div>
+                </a>
+
+                <div id="menu_hide">
+                    <a href="/practo-clone/html/findDoctors.html">
+                        <div>
+                            <span>Find Doctors</span>
+                            <p>Book an appointment</p>
+                            
+                        </div>
+                    </a>
+
+                    <a href="/practo-clone/html/videoConsult.html">
+                        <div>
+                            <span>Video Consult</span>
+                            <p>Consult top doctors</p>
+                            <div></div>
+                        </div>
+                    </a>
+
+                    <a href="/practo-clone/html/medicines.html">
+                        <div>
+                            <span>Medicines</span>
+                            <p>Practo pharmacy</p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div>
+                            <span>Lab Tests</span>
+                            <p>Book tests & checkup</p>
+                        </div>
+                    </a>
+
+                    <a href="">
+                        <div>
+                            <span>Surgeries</span>
+                            <p>Expert surgical care</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                
+                <div id="menu_visible">
+                    <span style="display: none;">
+                        <div id="new">NEW</div> For Corporates
+                    </span>
+                    <span>For Providers</span>
+                    <span>Security & help</span>
+                    <button><a href="/practo-clone/html/login.html">Login/Signup</a> </button>
+                </div>
+            </div>
+
+            <div>
+                <div id="phone">
+                    <div>
+                        <img src="https://www.practostatic.com/subscriptions/images/explore-plus-tag.png" alt="">
+                    </div>
+                    <button>Sign In</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="slider">
+        <div>
+            <i class="fa-solid fa-x" class="menu_icon" onclick="close_menu()"></i>
+            <div id="logo">
+                <img src="https://futuremedicineindia.com/wp-content/uploads/2020/03/practo1.jpg" alt="">
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <span>Practo</span>
+                <img src="	https://www.practostatic.com/subscriptions/images/plus-logo-mini.png
+                    " alt="">
+                <p>Health plans for you and your family</p>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+        <hr>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <span><b>Find Doctors </b>- Book an appointment</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-video"></i>
+                <span><b>Video Consult </b>- Consult top doctors</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span><b>Medicines </b>- Practo pharmacy</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-solid fa-flask"></i>
+                <span><b>Lab Tests </b>- Book tests & checkup/span
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-user-nurse"></i>
+                <span><b>Surgeries </b>- Expert surgical care</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div id="download">
+            <div>
+                <div>
+                    <i class="fa-regular fa-mobile-screen-button"></i>
+                </div>
+                <div>
+                    <span><b>Download the app</b></span>
+                    <p>Faster & complete healthcare experince</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-brands fa-readme"></i>
+                <span>Read health articles</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-book-medical"></i>
+                <span>View medical records</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-capsules"></i>
+                <span>Read about medicines</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <i class="fa-regular fa-house-medical"></i>
+                <span>Practo for Providers</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <hr>
+
+        <div class="list">
+            <div>
+                <span>Data security</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Help</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Contact us</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+
+        <div class="list">
+            <div>
+                <span>Terms of service</span>
+            </div>
+            <div class="rigth_arrow"></div>
+        </div>
+    </div>
+
+
+<!--       **********home page*****************     -->
+
     <div id="bigimage">
         <div id="bigimagetext">
             <h2> Skip the travel!</h2>
@@ -93,10 +240,10 @@
             <div id="bigimagetextlogo2">
                 <img id ="bigimagetextlogo3" src="../images/award-solid.svg"/>
                 <h5> Verified Doctors </h5>
-                <img id ="bigimagetextlogo3" src="../images/award-solid.svg"/>
-                <h5> Verified Doctors </h5>
-                <img id ="bigimagetextlogo3" src="../images/award-solid.svg"/>
-                <h5> Verified Doctors </h5>
+                <img id ="bigimagetextlogo3" src="../images/file-solid.svg"/>
+                <h5> Digital Prescription</h5>
+                <img id ="bigimagetextlogo3" src="../images/message-solid.svg"/>
+                <h5>Free Followup </h5>
 
             </div>
 
@@ -106,5 +253,408 @@
             <img id = "bigimagepic1" src="../images/bigimgvc.png"/>
         </div>
     </div>
+
+    
+    <div id="specialites">
+        <div id="spechead">
+            <h2> 25+ Specialities </h2>
+            <button id ="btn2"> See all Specialities</button>
+        </div>
+        <h4> Consult with top doctors across specialities </h4>
+        
+        <div id="specialitesgrid">
+            <div>
+                <img src="../images/gynaecologist.svg"/>
+                <h4>Gynaecology</h4>
+                <h5>₹399 </h5>
+                <h4 id="cn"> Consult now </h4>
+                
+            </div>
+            <div>
+                <img src="../images/sexology.svg"/>
+                <h4>Sexology</h4>
+                <h5>₹349 </h5>
+                <h4 id="cn"> Consult now </h4>
+            </div>
+            <div>
+                <img src="../images/gp.svg"/>
+                <h4>General Physician</h4>
+                <h5>₹349 </h5>
+                <h4 id="cn">Consult now </h4>
+            </div>
+            <div>
+                <img src="../images/dermatologist.svg"/>
+                <h4>Dermatology</h4>
+                <h5>₹399 </h5>
+                <h4 id="cn"> Consult now </h4>
+            </div>
+            <div>
+                <img src="../images/psychiatric.svg"/>
+                <h4>Psychiatry</h4>
+                <h5>₹349 </h5>
+                <h4 id="cn"> Consult now </h4>
+            </div>
+            <div>
+                <img src="../images/stomach.svg"/>
+                <h4>Stomach</h4>
+                <h5>₹399 </h5>
+                <h4 id="cn">Consult now </h4>
+            </div>
+        </div>
+    </div>
+
+    <div id="common">
+        <div id="commonhead">
+            <h2> Common Health Concerns </h2>
+            <button id ="btn2"> See all Specialities</button>
+        </div>
+        <h4> Consult a doctor online for any health issue </h4>
+        <div id="commongrid">
+            <div>
+                <img src="../images/cough.jpeg"/>
+                <h4>Cough & Cold ?</h4>
+                <h5>₹349 </h5>
+                <h4 id="cn">Consult now </h4>
+                
+            </div>
+            <div>
+                <img src="../images/period-problems.jpeg"/>
+                <h4>Period Problems ?</h4>
+                <h5>₹399 </h5>
+                <h4 id="cn">Consult now </h4>
+            </div>
+            <div>
+                <img src="../images/performance-issues-bed.jpeg"/>
+                <h4>Performance issues in bed ?</h4>
+                <h5>₹399 </h5>
+                <h4 id="cn">Consult now </h4>
+            </div>
+            <div>
+                <img src="../images/skin-problems.jpeg"/>
+                <h4>Skin Problems ?</h4>
+                <h5>₹349 </h5>
+                <h4 id="cn">Consult now </h4>
+            </div>
+            
+        </div>
+    </div>
+
+    <div id="offer">
+        <div id="offerhead">
+            <h2> Offers</h2>
+            
+        </div>
+        
+        <div id="offergrid">
+            <div>
+                <img src="../images/offer1.png"/>
+                
+                
+            </div>
+            <div>
+                <img src="../images/offer2.png"/>
+               
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div id="doc">
+        <div id="dochead">
+            <h2> Our Doctors </h2>
+            
+        </div>
+        
+        <div id="docgrid">
+            <div id ="docgridflex" >
+                <div>
+                    <img id = "docgridfleximg" src="../images/dr-murali.jpeg"/>
+                </div>
+                <div id ="docgridflextext">
+                    <h4>Dr. Murli</h4>
+                    <h5>Dermatologist </h5>
+                    <h5>6 years experience</h5>
+                </div>
+                
+                
+            </div>
+            <div id ="docgridflex" >
+                <div>
+                    <img id = "docgridfleximg" src="../images/dr-kamal.jpeg"/>
+                </div>
+                <div id ="docgridflextext">
+                    <h4>Dr. Kumar</h4>
+                    <h5>Psychiatrist </h5>
+                    <h5>12 years experience</h5>
+                </div>
+                
+                
+            </div>
+            <div id ="docgridflex" >
+                <div>
+                    <img id = "docgridfleximg" src="../images/dr-rajesh.png"/>
+                </div>
+                <div id ="docgridflextext">
+                    <h4>Dr. Hussain </h4>
+                    <h5>Psychiatrist </h5>
+                    <h5>11 years experience</h5>
+                </div>
+                
+                
+            </div>
+            <div id ="docgridflex" >
+                <div>
+                    <img id = "docgridfleximg" src="../images/dr-rayees.jpeg"/>
+                </div>
+                <div id ="docgridflextext">
+                    <h4>Dr. Shah</h4>
+                    <h5>Dermatologist </h5>
+                    <h5>7 years experience</h5>
+                </div>
+                
+                
+            </div>
+           
+            
+            
+            
+        </div>
+    </div>
+
+    <div id=hiw>
+        <img src="../images/hwDiv.png"/>
+    </div>
+
+    <div id=blackdiv>
+        <div>
+            <h2> 2,00,000+</h2>
+            <h4>Happy Users</h4>
+        </div>
+        <div>
+            <h2> 20,000+</h2>
+            <h4>Verified Doctors</h4>
+        </div>
+        <div>
+            <h2> 25+</h2>
+            <h4>Specialities</h4>
+        </div>
+        <div>
+            <h2> 4.5 / 5</h2>
+            <h4>App Rating</h4>
+        </div>
+    </div>
+
+    <div id="experience">
+        <div id="experiencehead">
+            <h2> Experience online doctor consultations </h2>
+            
+        </div>
+        <h4> Consult a doctor online for any health issue </h4>
+        <div id="experiencegrid">
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QbUqZ3_9DKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>#HelloDoctor Consult a doctor online from home</h4>
+                
+                
+            </div>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/4cT6GE5g8aw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <h4>#HelloDoctor Consult a doctor online from home</h4>
+                
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div id="faq">
+        <div id="faqhead">
+            <h2> FAQ's</h2>
+            
+        </div>
+        
+        <div id="faqgrid">
+            <div>
+                <h4>What is online doctor consultation?</h4>
+                <h5>Online doctor consultation or online medical consultation is a method to connect patients and doctors virtually. It is a convenient and easy way to get online doctor advice using doctor apps or telemedicine apps or platforms, and the internet.</h5>
+
+                <h4>Are your online doctors qualified?</h4>
+                <h5>We follow a strict verification process for every doctor providing online medical services on Practo. Our team manually verifies necessary documents, registrations, and certifications for every doctor.</h5>
+
+                <h4>What happens if I don’t get a response from a doctor?</h4>
+                <h5>In the unlikely event that an online doctor does not respond, you will be entitled to a 100% refund.</h5>
+                
+                
+            </div>
+            <div>
+                <h4>How do I start online consultation with doctors on Practo?</h4>
+                <h5>
+                    
+                    • Ask your queries to the doctor via audio or video call
+                    • Get a valid online doctor prescription and a 3-day free online doctor consultation</h5>
+
+                <h4>Is online doctor consultation safe and secured on Practo?</h4>
+                <h5>The privacy of our patients is critical to us, and thus, we are compliant with industry standards like ISO 27001. Rest assured that your online consultation with a doctor is completely safe and secured with 256-bit encryption.</h5>
+
+                <h4>Can I do a free online doctor consultation on Practo?</h4>
+                <h5>Avail a free online consultation with top doctors in India during the India Health Hour. We have the free questions service available on our health app only. Ask a question and get free online medical advice within 24 to 48 hours.</h5>
+                
+                
+            </div>
+            
+            
+        </div>
+    </div>
+
+    <div id=blackdiv2>
+        <div>
+            <h2> Still delaying your health concerns ?</h2>
+            <h4>Connect with India's top doctors online</h4>
+        </div>
+        <div>
+            <button id = "btn3" style="margin-top: 50px;">Consult Now</button>
+        </div>
+        
+    </div>
+
+
+    <!-- **********************footer***************************** -->
+
+
+    <div id="first_div">
+        <div>
+            <img src="https://www.practostatic.com/consumer-home/mweb/images/1544525429/app-download-banner.svg" alt="">
+        </div>
+
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png" alt="">
+            <div>
+                <p>Download the Practo app</p>
+                <span>Get Rs. 200 HealthCash</span>
+            </div>
+        </div>
+
+        <div>
+            <p><span>✓ </span>Get Rs. 200 Health Cash</p>
+            <p><span>✓ </span>Live medicine order tracking</p>
+            <p><span>✓ </span>Exclusive healthcare packages</p>
+        </div>
+
+        <div>
+            <button>Download the app now</button>
+        </div>
+    </div>
+
+    
+    <footer>
+        <div>
+            <div id="expand1">
+                <p><b>Practo</b></p>
+                <span id="cross1">+</span>
+                <div class="hide_content" id="content1">
+                    <p>About</p>
+                    <p>Blog</p>
+                    <p>Careers</p>
+                    <p>Press</p>
+                    <p>Contact Us</p>
+                </div>
+            </div>
+
+            <div id="expand2">
+                <p><b>For Patients</b></p>
+                <span id="cross2">+</span>
+                <div class="hide_content" id="content2">
+                    <p>Search for doctors</p>
+                    <p>Search for clinics</p>
+                    <p>Search for hospitals</p>
+                    <p>Book Diagnostic Tests</p>
+                    <p>Book Full Body Checkups</p>
+                    <p>Practo Plus</p>
+                    <p>Covid Hospital listing</p>
+                    <p>Practo Care Clinics</p>
+                    <p>Read health article</p>
+                    <p>Read about medicines</p>
+                    <p>Practo drive</p>
+                    <p>Health app</p>
+                </div>
+            </div>
+
+            <div id="expand3">
+                <p><b>For Doctors</b></p>
+                <span id="cross3">+</span>
+                <div class="hide_content" id="content3">
+                    <p>Practo Consult</p>
+                    <p>Practo Health Feed</p>
+                    <p>Practo Profile</p>
+                </div>
+            </div>
+
+            <div id="expand4">
+                <p><b>For Clinics</b></p>
+                <span id="cross4">+</span>
+                <div class="hide_content" id="content4">
+                    <p>Ray by Practo</p>
+                    <p>Practo Reach</p>
+                    <p>Ray Tab</p>
+                    <p>Practo Pro</p>
+                </div>
+            </div>
+
+            <div id="expand5">
+                <p><b>For Hospitals</b></p>
+                <span id="cross5">+</span>
+                <div class="hide_content" id="content5">
+                    <p>Insta by Practo</p>
+                    <p>Qikwell by Practo</p>
+                    <p>Practo Profile</p>
+                    <p>Practo Reach</p>
+                </div>
+            </div>
+
+            <div id="expand6">
+                <p><b>More</b></p>
+                <span id="cross6">+</span>
+                <div class="hide_content" id="content6">
+                    <p>Help</p>
+                    <p>Developers</p>
+                    <p>Privacy Policy</p>
+                    <p>Terms & Conditions</p>
+                    <p>Healthcare Directory</p>
+                    <p>Practo Health Wiki</p>
+                </div>
+            </div>
+
+            <div id="expand7">
+                <p><b>Social</b></p>
+                <span id="cross7">+</span>
+                <div class="hide_content" id="content7">
+                    <p>Facebook</p>
+                    <p>Twitter</p>
+                    <p>Linkedin</p>
+                    <p>Youtube</p>
+                    <p>Github</p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer_logo">
+            <img src="https://wp.cghnyc.com/media/Practo-w-trademark-hero.svg" alt="">
+        </div>
+
+        <div>
+            <span>Copyright © 2017, Practo. All rights reserved.</span>
+        </div>
+    </footer>
+    
+
+    
+
+
 </body>
+
+<script src="/practo-clone/Js/header.js">
+    // createnavbar()
+</script>
+<script src="/practo-clone/Js/footer.js"></script>
 </html>
