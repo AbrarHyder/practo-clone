@@ -27,7 +27,7 @@
         #tailLogoDiv{
             background-color: #FFFFFF;
             display: flex;
-            height: 530px;
+            height: 640px;
             width: 70%;
             margin-left: 15%;
             margin-top: 5vh;
@@ -88,6 +88,7 @@
             font-weight: 500;
             text-align: center;
             margin-left: 10%;
+            margin-bottom: -5%;
             
             
         }
@@ -106,6 +107,15 @@
             font-family: Camphor,sans-serif;
             background-color: #FFFFFF;
             padding-top: 40px;
+            
+        }
+        #inputDiv>h5{
+            font-family: Camphor,sans-serif;
+            font-weight: 500;
+            
+            margin-left: 10%;
+            background-color: #FFFFFF;
+
         }
 
         

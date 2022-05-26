@@ -1,0 +1,87 @@
+body
+{
+    background-color: #eaeaea;
+}
+form
+{
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    height: 200px;
+    justify-content: space-between;
+}
+form>div
+{
+    display: flex;
+    height: 30px;
+    justify-content: space-between;
+}
+h1
+{
+    margin-left: 25px;
+}
+#container2
+{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 550px;
+    margin: 100px auto;
+    padding: 10px;
+    font-family: Camphor,sans-serif;
+    border-radius: 5px;
+}
+form>input
+{
+    height: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    font-size: 15px
+}
+form>div>input
+{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #9e9e9e;
+    font-size: 15px;
+    font-family: Camphor,sans-serif;
+}
+#payment
+{
+    height: 50px;
+    width: 40%;
+    font-family: Camphor,sans-serif;
+    font-size: 18px;
+    color: white;
+    background-color: #14bef0;
+    border: none;
+    border-radius: 5px;
+    
+}
+#cardNumber
+{
+    width: 60%;
+    margin-bottom: 40px;
+}
+form>img{
+    width: 120px;
+    /* padding-top: 12px; */
+    margin-top: -15%;
+    margin-left: 350px;
+}
+
+#headLogo{
+            
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background-color: #FFFFFF;
+    
+}
+#logoImg{
+    width: 7%;
+    padding-left: 10%;
+    background-color: #FFFFFF;
+    
+}
