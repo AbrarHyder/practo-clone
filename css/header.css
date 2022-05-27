@@ -5,6 +5,7 @@
 
 a {
     text-decoration: none;
+    color: #2d2d32;
 }
 
 nav {
@@ -13,6 +14,12 @@ nav {
     border-bottom: 2px solid #f0f0f5;
     justify-content: space-evenly;
     margin-top: 5px;
+    background-color: #fff;
+    /* margin-top: -5px; */
+    padding-top: 10px;
+    /* position: fixed;
+    top: 0; */
+    /* margin-bottom: 10px; */
 }
 
 nav>div:nth-child(1) {
