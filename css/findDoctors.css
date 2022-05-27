@@ -127,7 +127,7 @@ body{
 .container3{
     display: flex;
     gap:150px;
-    margin-top: 150px;
+    margin-top: 50px;
     
     margin-bottom: 150px;
     margin-left: 170px;
@@ -352,21 +352,23 @@ body{
 }
 .container9>div{
     /* margin-top: 15%; */
+    margin-top: 180px;
+    
+    margin-bottom: 180px;
+}
+.container10{
+    display: flex;
+    background-color: white;
+}
+.container10>div{
     margin-top: 150px;
     
     margin-bottom: 150px;
 }
-.abc{
-   margin-left: 50%;
-        
-        width: 24px;
-        height: 24px;
-        
-        /* background-color: #14bef0; */
-        background: linear-gradient(-90deg,rgba(197,230,243,.79),transparent),linear-gradient(180deg,#14bef0 0,rgba(0,58,52,0));
-        transform: rotate(90deg);
-        
-        border-top: 1px solid #14bef0;
-        border-radius: 24px;
-    
+.last{
+    display: flex;
+    gap:20px;
+}
+.last>img{
+    width:150px;
 }

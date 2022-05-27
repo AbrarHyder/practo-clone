@@ -8,6 +8,7 @@
     <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/9/96/Practo_Health_Logo.png">
     <link rel="stylesheet" href="/practo-clone/css/header.css">
     <link rel="stylesheet" href="/practo-clone/css/footer.css">
+    <link rel="stylesheet" href="/css/medicines.css">
     <title>Document</title>
 </head>
 <body>
@@ -223,6 +224,31 @@
 
 <!--       **********home page*****************     -->
 
+<div id="container1">
+    <div>
+        <div class="leftArrow"></div>
+        <div class="rightArrow"></div>
+        <div class="images">
+            <img class="slider1image" src='https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-1.48172107.png' />
+        </div>
+    </div>
+</div>
+<p class="browseMedicines">Browse medicines & health products</p>
+<p style="margin-left:10%;margin-top:30px;font-size: 16px;">Health Condition</p>
+<div class="container2">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-5.a8ae14dd.png" alt="">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-6.51626a1a.png">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-7.476668e1.png" alt="">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/h-c-4.5e130b77.png" alt="">
+</div>
+<p style="margin-left:10%;margin-top:30px;font-size: 16px;">Categories</p>
+<div class="container2">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-2.640dcfd5.png" alt="">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-6.aa7d1cba.png" alt="">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-9.5029c27e.png" alt="">
+    <img src="https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/cat-8.c4cbe33a.png" alt="">
+
+</div>
 <!-- **********************footer***************************** -->
 
 
@@ -350,6 +376,36 @@
     </div>
 </footer>
 </body>
+<script>
+    let z=[];
+z[0]='https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-1.48172107.png';
+z[1]='https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-2.573c08f7.png';
+z[2]='https://www.practostatic.com/ecommerce-assets/static/media/home/desktop/full-width-3.8c8ab982.png';
+let y=0;
+
+    document.querySelector('.leftArrow').addEventListener('click',slideLeft)
+
+
+function slideLeft(){
+    y--;
+    if(y<0){
+        y=2;
+    }
+    document.querySelector('.slider1image').src=z[y];
+    
+}
+setInterval(slideLeft,3000);
+document.querySelector('.rightArrow').addEventListener('click',slideRight);
+function slideRight(){
+    y++;
+    if(y>2){
+        y=0
+    }
+    document.querySelector('.slider1image').src=z[y];
+    
+}
+console.log(y)
+</script>
 <script src="/practo-clone/Js/header.js">
     // createnavbar()
 </script>
