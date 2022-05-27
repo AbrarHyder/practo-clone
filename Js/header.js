@@ -1,6 +1,11 @@
 var header = document.querySelector('header')
 var slider = document.querySelector('#slider')
 
+
+var a = JSON.parse(localStorage.getItem('login'))
+
+
+
 function createnavbar() {
     header.innerHTML = '';
     var nav = document.createElement('nav')
@@ -55,4 +60,14 @@ function close_menu() {
     slider.style.display = 'none';
 
 }
+
+
+    var login_n = document.querySelector('#login_n')
+    console.log(login_n)
+    console.log(a)
+    if(a != null){
+        login_n.innerHTML =''
+        login_n.innerText = a[1]
+        login_n.style.border = 'none'
+    }
 
