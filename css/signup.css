@@ -40,16 +40,7 @@
  .signup-maindiv>div{
          width:100%;
  }
- @media only screen and (max-width: 425px) {
-         .signup-maindiv{
-                 width: 65%;
-                 margin-left:auto;
-                 margin-right: auto;
-                 display: flex;
-                 flex-direction: column;
-                 margin-top: 2vw;  
-         }       
- }
+ 
  .signup-maindiv>div>img{
          width:90%;
          margin-left: auto;
@@ -74,15 +65,26 @@
  }
  .signup-form>input{
          height: 2.6vw;
+         outline: none;
+ }
+ .signup-form>input:focus{
+        height: 2.6vw;
+         border: 1px solid #14bef0;
+ }
+ .signup-form>div{
+         display: flex;
+         flex-direction: row;
  }
  .signup-form>div>input{
          margin-top: 1.3vw;
          margin-bottom: 1vw;
          height:1vw;
  }
+ 
  .signup-form>div>label{
          font-size: .8vw;
-         margin-left: .5vw;
+         margin-left: .8vw;
+         margin-top: 1.5vw;
          color: rgb(118, 118, 118);
  }
  input[type=checkbox] {
@@ -136,3 +138,57 @@
          margin-top: 1vw;
          cursor: pointer;
  }
+ @media only screen and (max-width: 748px) {
+        .signup-maindiv{
+                width: 65%;
+                margin-left:auto;
+                margin-right: auto;
+                display:grid;
+                flex-direction: column;
+                margin-top: 2vw;  
+        } 
+        .signup-maindiv>div>img{
+               width:100%;
+               margin-left: auto;
+               margin-right: auto;
+               margin-top: 2vw;
+               margin-bottom: 2vw;
+              
+       }
+       .signup-form{
+               margin:1.5vw;
+               border:1px solid  gainsboro;
+               display:flex;
+               flex-direction: column;
+               padding:2vw;
+               font-family: Arial,sans-serif;
+               color: rgb(88, 84, 84);
+               font-weight: 500;
+               
+       }
+       .signup-form>p{
+               font-size: 2vw;
+               margin-bottom: .5vw;
+            
+       }
+       .signup-form>input{
+               height: 2.6vw;
+       }
+       .signup-form>div{
+               display: flex;
+              flex-direction: row;
+       }
+       .signup-form>div>input{
+               margin-top: 1.3vw;
+               margin-bottom: 1vw;
+               height:1vw;
+
+       }
+       .signup-form>div>label{
+               font-size:1.25vw;
+               margin-left:.5vw;
+               margin-top: 1.5vw;
+               color: rgb(118, 118, 118);
+               text-align:left;
+       }      
+}
