@@ -1,19 +1,22 @@
 .login-menu{
-       width:35%;
+       width:45%;
        margin-left:auto;
        margin-right: auto;
-       
        display: grid;
        grid-template-columns: repeat(2, 1fr);
-
+}
+.login-menu>a{
+        display: flex;
 }
 .login-menu>a>input{
-       width:80%;
-       margin:auto;
+       width:30%;
+       margin: auto;
        font-family: Arial, sans-serif;
        font-size: 1.2vw;
        padding-top: 1.5vw;
        padding-bottom: 1.5vw;
+       padding-left: 0;
+       padding-right: 0;
        border:none ;
        background-color: white;
        cursor: pointer;
@@ -22,6 +25,7 @@
 .login-menu>a>input:hover{
         font-weight: 600;
         color: #14bef0;
+        border-bottom: 3px solid #14bef0;
 }
 .login-ul{
         width: 65%;
