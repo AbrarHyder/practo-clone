@@ -1,5 +1,5 @@
 .signup-menu{
-        width:35%;
+        width:45%;
         margin-left:auto;
         margin-right: auto;
         
@@ -7,21 +7,28 @@
         grid-template-columns: repeat(2, 1fr);
  
  }
+ .signup-menu>a{
+        display: flex;
+}
  .signup-menu>a>input{
-        width:80%;
+        width:30%;
         margin:auto;
         font-family: Arial, sans-serif;
         font-size: 1.2vw;
         padding-top: 1.5vw;
         padding-bottom: 1.5vw;
+        padding-left: 0;
+        padding-right: 0;
         border:none ;
         background-color: white;
         cursor: pointer;
         
  }
  .signup-menu>a>input:hover{
-         font-weight: 600;
+         font-weight: 700;
          color: #14bef0;
+         border-bottom: 3px solid #14bef0
+         ;
  }
  .signup-ul{
          width: 65%;
